@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-pt="Concierge - Hotel RJ" data-en="Concierge - Hotel RJ" data-es="Conserjería - Hotel RJ">
+        Concierge - Hotel RJ
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #E6F3FF;
+            color: #2c3e50;
+        }
+
+        header {
+            background: #2f4f6f;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        nav {
+            background: #004080;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lang-btns {
+            margin-top: 15px;
+        }
+
+        .lang-btns button {
+            margin: 5px;
+            padding: 8px 12px;
+            border: none;
+            background: #E0F0FF;
+            color: #003366;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        h2 {
+            border-left: 5px solid #66B3FF;
+            padding-left: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #66B3FF;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #003366;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .botao-wpp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #25D366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 data-pt="Concierge Ipanema Inn" data-en="Ipanema Inn Concierge" data-es="Conserjería Ipanema Inn">
+            Concierge Ipanema Inn
+        </h1>
+
+        <p data-pt="Explore o melhor do Rio de Janeiro com o nosso concierge"
+            data-en="Explore the best of Rio de Janeiro with our concierge"
+            data-es="Explore lo mejor de Río de Janeiro con nuestro conserje">
+            Explore o melhor do Rio de Janeiro com o nosso concierge
+        </p>
+
+        <div class="lang-btns">
+            <button onclick="setLang('pt')">🇧🇷 Português</button>
+            <button onclick="setLang('en')">🇺🇸 English</button>
+            <button onclick="setLang('es')">🇪🇸 Español</button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#passeios" data-pt="Passeios" data-en="Tours" data-es="Paseos">Passeios</a>
+        <a href="#contato" data-pt="Contato" data-en="Contact" data-es="Contacto">Contato</a>
+    </nav>
+
+    <section id="passeios" class="container">
+        <h2 data-pt="Passeios Disponíveis" data-en="Available Tours" data-es="Paseos Disponibles">
+            Passeios Disponíveis
+        </h2>
+
+        <!-- UM DIA NO RIO -->
+        <div class="card">
+            <h3 data-pt="⛰️ Um dia no Rio" data-en="⛰️ One Day in Rio" data-es="⛰️ Un Día en Río">
+                🎯 Um dia no Rio
+            </h3>
+
+            <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
+            <ul>
+                <li data-pt="Cristo Redentor" data-en="Christ the Redeemer" data-es="Cristo Redentor">
+                    Cristo Redentor
+                </li>
+                <li data-pt="Mirante Dona Marta" data-en="Dona Marta Viewpoint" data-es="Mirador Dona Marta">
+                    Mirante Dona Marta
+                </li>
+                <li data-pt="Escadaria Selarón" data-en="Selarón Steps" data-es="Escaleras Selarón">
+                    Escadaria Selarón
+                </li>
+                <li data-pt="Catedral São Sebastião do Rio de Janeiro" data-en="Rio de Janeiro Cathedral"
+                    data-es="Catedral de Río de Janeiro">
+                    Catedral São Sebastião do Rio de Janeiro
+                </li>
+                <li data-pt="Sambódromo (panorâmico)" data-en="Sambadrome (panoramic)"
+                    data-es="Sambódromo (panorámico)">
+                    Sambódromo (panorâmico)
+                </li>
+                <li data-pt="Área externa do Maracanã" data-en="Maracanã external area"
+                    data-es="Área externa del Maracanã">
+                    Área externa do Maracanã
+                </li>
+                <li data-pt="Almoço buffet livre" data-en="All-you-can-eat buffet lunch"
+                    data-es="Almuerzo buffet libre">
+                    Almoço buffet livre
+                </li>
+                <li data-pt="Bondinho / teleférico do Pão de Açúcar" data-en="Sugarloaf Cable Car"
+                    data-es="Teleférico del Pan de Azúcar">
+                    Bondinho / teleférico do Pão de Açúcar
+                </li>
+            </ul>
+
+            <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+            <ul>
+                <li data-pt="Transporte com ar-condicionado (ida e volta)"
+                    data-en="Air-conditioned transportation (round trip)"
+                    data-es="Transporte con aire acondicionado (ida y vuelta)">
+                    Transporte com ar-condicionado (ida e volta)
+                </li>
+                <li data-pt="Ingresso para o Cristo Redentor" data-en="Entrance ticket to Christ the Redeemer"
+                    data-es="Entrada para el Cristo Redentor">
+                    Ingresso para o Cristo Redentor
+                </li>
+                <li data-pt="Ingresso para o Bondinho do Pão de Açúcar" data-en="Entrance ticket to Sugarloaf Cable Car"
+                    data-es="Entrada al teleférico del Pan de Azúcar">
+                    Ingresso para o Bondinho do Pão de Açúcar
+                </li>
+                <li data-pt="Almoço buffet livre (geralmente sem bebidas/sobremesas)"
+                    data-en="All-you-can-eat buffet lunch (usually without drinks/desserts)"
+                    data-es="Almuerzo buffet libre (generalmente sin bebidas/postres)">
+                    Almoço buffet livre (geralmente sem bebidas/sobremesas)
+                </li>
+                <li data-pt="Guia de turismo credenciado" data-en="Certified tour guide"
+                    data-es="Guía de turismo acreditado">
+                    Guia de turismo credenciado
+                </li>
+                <li data-pt="Acesso aos pontos turísticos listados" data-en="Access to all listed attractions"
+                    data-es="Acceso a los puntos turísticos listados">
+                    Acesso aos pontos turísticos listados
+                </li>
+            </ul>
+
+            <a class="btn" data-pt="Quero saber mais" data-en="More info" data-es="Quiero saber más"
+                data-msg-pt="Olá, tenho interesse no passeio Um dia no Rio."
+                data-msg-en="Hello, I'm interested in the One Day in Rio tour."
+                data-msg-es="Hola, tengo interés en el tour Un Día en Río."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+no+passeio+Um+dia+no+Rio."
+                target="_blank">
+                Quero saber mais
+            </a>
+        </div>
+
+        <!-- RIO EXPRESS -->
+        <div class="card">
+            <h3 data-pt="🎯 Rio Express" data-en="🎯 Rio Express" data-es="🎯 Río Express">
+                🎯 Rio Express
+            </h3>
+
+            <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
+            <ul>
+                <li data-pt="Cristo Redentor" data-en="Christ the Redeemer" data-es="Cristo Redentor">
+                    Cristo Redentor
+                </li>
+                <li data-pt="Bondinho / teleférico do Pão de Açúcar" data-en="Sugarloaf Cable Car"
+                    data-es="Teleférico del Pan de Azúcar">
+                    Bondinho / teleférico do Pão de Açúcar
+                </li>
+            </ul>
+
+            <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+            <ul>
+                <li data-pt="Transporte com ar-condicionado (ida e volta/van)"
+                    data-en="Air-conditioned transportation (round trip/van)"
+                    data-es="Transporte con aire acondicionado (ida y vuelta/en van)">
+                    Transporte com ar-condicionado (ida e volta/van)
+                </li>
+                <li data-pt="Ingresso para o Cristo Redentor" data-en="Entrance ticket to Christ the Redeemer"
+                    data-es="Entrada para el Cristo Redentor">
+                    Ingresso para o Cristo Redentor
+                </li>
+                <li data-pt="Ingresso para o Bondinho do Pão de Açúcar" data-en="Entrance ticket to Sugarloaf Cable Car"
+                    data-es="Entrada al teleférico del Pan de Azúcar">
+                    Ingresso para o Bondinho do Pão de Açúcar
+                </li>
+                <li data-pt="Guia de turismo credenciado (geralmente bilíngue)"
+                    data-en="Certified tour guide (usually bilingual)"
+                    data-es="Guía de turismo acreditado (generalmente bilingüe)">
+                    Guia de turismo credenciado (geralmente bilíngue)
+                </li>
+            </ul>
+
+            <a class="btn" data-pt="Quero saber mais" data-en="More info" data-es="Quiero saber más"
+                data-msg-pt="Olá, tenho interesse no passeio Rio Express."
+                data-msg-en="Hello, I'm interested in the Rio Express tour."
+                data-msg-es="Hola, tengo interés en el tour Rio Express."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+no+passeio+Rio+Express."
+                target="_blank">
+                Quero saber mais
+            </a>
+        </div>
+
+        <!-- FLORESTA DA TIJUCA -->
+        <div class="card">
+            <h3 data-pt="🌳 Floresta da Tijuca" data-en="🌳 Tijuca Forest" data-es="🌳 Bosque da Tijuca">
+                🌳 Floresta da Tijuca
+            </h3>
+
+            <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
+            <p data-pt="Vista Chinesa, Mesa do Imperador, Cachoeira Cascatinha Taunay, Capela Mayrink, Centro de Visitantes, Açude da Solidão, Cachoeiras e Trilhas."
+                data-en="Chinese View, Emperor's Table, Taunay Waterfall, Mayrink Chapel, Visitor Center, Solitude Reservoir, Waterfalls and Trails."
+                data-es="Vista China, Mesa del Emperador, Cascada Taunay, Capilla Mayrink, Centro de Visitantes, Represa de la Soledad, Cascadas y Senderos.">
+                Vista Chinesa, Mesa do Imperador, Cachoeira Cascatinha Taunay, Capela Mayrink, Centro de Visitantes,
+                Açude da Solidão, Cachoeiras e Trilhas.
+            </p>
+
+            <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+            <p data-pt="Transporte e guia de turismo especializado."
+                data-en="Transportation and specialized tour guide."
+                data-es="Transporte y guía de turismo especializado.">
+                Transporte e guia de turismo especializado.
+            </p>
+
+            <h4 data-pt="Horário" data-en="Schedule" data-es="Horario">Horário</h4>
+            <p data-pt="De 07h30 a 08h30" data-en="From 7:30 AM to 8:30 AM" data-es="De 7:30 a 8:30">
+                De 07h30 a 08h30
+            </p>
+
+            <h4 data-pt="Frequência" data-en="Frequency" data-es="Frecuencia">Frequência</h4>
+            <p data-pt="Todos os dias" data-en="Every day" data-es="Todos los días">Todos os dias</p>
+
+            <h4 data-pt="Duração" data-en="Duration" data-es="Duración">Duração</h4>
+            <p data-pt="4 horas" data-en="4 hours" data-es="4 horas">4 horas</p>
+
+            <a class="btn" data-pt="Quero saber mais" data-en="More info" data-es="Quiero saber más"
+                data-msg-pt="Olá, tenho interesse no passeio Floresta da Tijuca."
+                data-msg-en="Hello, I'm interested in the Tijuca Forest tour."
+                data-msg-es="Hola, tengo interés en el tour Bosque da Tijuca."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+no+passeio+Floresta+da+Tijuca."
+                target="_blank">
+                Quero saber mais
+            </a>
+        </div>
+
+        <!-- PEDRA DO TELEGRÁFO -->
+        <div class="card">
+            <h3 data-pt="🏔️ Pedra do Telégrafo" data-en="🏔️ Telégrafo Rock" data-es="🏔️ Piedra del Telégrafo">
+                🏔️ Pedra do Telégrafo
+            </h3>
+
+            <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
+            <p data-pt="Passando por bairros como Barra da Tijuca e Recreio, com trilha de 50 minutos até o topo."
+                data-en="Passing through neighborhoods such as Barra da Tijuca and Recreio, with a 50-minute hike to the top."
+                data-es="Pasando por barrios como Barra da Tijuca y Recreio, con una caminata de 50 minutos hasta la cima.">
+                Passando por bairros como Barra da Tijuca e Recreio, com trilha de 50 minutos até o topo.
+            </p>
+
+            <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+            <p data-pt="Transporte em Jeep e guia de turismo credenciado."
+                data-en="Jeep transportation and certified tour guide."
+                data-es="Transporte en Jeep y guía turístico acreditado.">
+                Transporte em Jeep e guia de turismo credenciado.
+            </p>
+
+            <h4 data-pt="Frequência" data-en="Frequency" data-es="Frecuencia">Frequência</h4>
+            <p data-pt="Diário" data-en="Daily" data-es="Diario">Diário</p>
+
+            <h4 data-pt="Duração" data-en="Duration" data-es="Duración">Duração</h4>
+            <p data-pt="5 horas" data-en="5 hours" data-es="5 horas">5 horas</p>
+
+            <a class="btn" data-pt="Quero saber mais" data-en="More info" data-es="Quiero saber más"
+                data-msg-pt="Olá, tenho interesse no passeio Pedra do Telégrafo."
+                data-msg-en="Hello, I'm interested in the Telégrafo Rock tour."
+                data-msg-es="Hola, tengo interés en el tour Piedra del Telégrafo."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+no+passeio+Pedra+do+Tel%C3%A9grafo."
+                target="_blank">
+                Quero saber mais
+            </a>
+        </div>
+
+        <div class="card">
+            <h3 data-pt="🛥️ Passeio de Lancha no Rio" data-en="🛥️ Boat Tour in Rio"
+                data-es="🛥️ Paseo en Lancha en Río">
+                Passeio de Lancha no Rio
+            </h3>
+
+            <p data-pt="Um passeio incrível pelas águas do Rio de Janeiro, com paradas para fotos, mergulhos e vistas deslumbrantes."
+                data-en="An amazing boat ride through the waters of Rio de Janeiro, with stops for photos, swimming, and stunning views."
+                data-es="Un increíble paseo en lancha por las aguas de Río de Janeiro, con paradas para fotos, baños y vistas impresionantes.">
+                Um passeio incrível pelas águas do Rio de Janeiro, com paradas para fotos, mergulhos e vistas
+                deslumbrantes.
+            </p>
+
+            <a class="btn whats-btn"
+                data-pt-link="https://wa.me/5521967247793?text=Olá,+tenho+interesse+no+Passeio+de+Lancha+no+Rio."
+                data-en-link="https://wa.me/5521967247793?text=Hello,+I'm+interested+in+the+Boat+Tour+in+Rio."
+                data-es-link="https://wa.me/5521967247793?text=Hola,+tengo+interés+en+el+Paseo+en+Lancha+en+Río."
+                target="_blank" data-pt="Solicitar Passeio" data-en="Request Tour" data-es="Solicitar Paseo">
+                Solicitar Passeio
+            </a>
+        </div>
+
+        <div class="card">
+            <h3 data-pt="🤿 Mergulho em Arraial do Cabo" data-en="🤿 Diving in Arraial do Cabo"
+                data-es="🤿 Buceo en Arraial do Cabo">
+                Mergulho em Arraial do Cabo
+            </h3>
+
+            <p data-pt="Explore a vida marinha de Arraial do Cabo em um mergulho guiado nas águas mais claras do Brasil."
+                data-en="Explore the marine life of Arraial do Cabo in a guided dive through the clearest waters in Brazil."
+                data-es="Explore la vida marina de Arraial do Cabo en una inmersión guiada por las aguas más claras de Brasil.">
+                Explore a vida marinha de Arraial do Cabo em um mergulho guiado nas águas mais claras do Brasil.
+            </p>
+
+            <a class="btn whats-btn"
+                data-pt-link="https://wa.me/5521967247793?text=Olá,+tenho+interesse+no+Mergulho+em+Arraial+do+Cabo."
+                data-en-link="https://wa.me/5521967247793?text=Hello,+I'm+interested+in+Diving+in+Arraial+do+Cabo."
+                data-es-link="https://wa.me/5521967247793?text=Hola,+tengo+interés+en+el+Buceo+en+Arraial+do+Cabo."
+                target="_blank" data-pt="Solicitar Passeio" data-en="Request Tour" data-es="Solicitar Paseo">
+                Solicitar Passeio
+            </a>
+        </div>
+
+
+        <!-- FAVELA TOUR -->
+        <div class="card">
+            <h3 data-pt="🏙️ Favela Tour" data-en="🏙️ Favela Tour" data-es="🏙️ Favela Tour">
+                🏙️ Favela Tour
+            </h3>
+
+            <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
+            <p data-pt="Rocinha com visita a ruas, becos e contato com a vida local."
+                data-en="Rocinha, with visits to streets, alleys, and daily local life."
+                data-es="Rocinha, con visitas a calles, callejones y la vida local.">
+                Rocinha com visita a ruas, becos e contato com a vida local.
+            </p>
+
+            <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+            <p data-pt="Transporte e guia especializado." data-en="Transportation and specialized guide."
+                data-es="Transporte y guía especializado.">
+                Transporte e guia especializado.
+            </p>
+
+            <h4 data-pt="Frequência" data-en="Frequency" data-es="Frecuencia">Frequência</h4>
+            <p data-pt="Diário" data-en="Daily" data-es="Diario">Diário</p>
+
+            <h4 data-pt="Duração" data-en="Duration" data-es="Duración">Duração</h4>
+            <p data-pt="4 horas" data-en="4 hours" data-es="4 horas">4 horas</p>
+
+            <a class="btn" data-pt="Quero saber mais" data-en="More info" data-es="Quiero saber más"
+                data-msg-pt="Olá, tenho interesse no passeio Favela Tour."
+                data-msg-en="Hello, I'm interested in the Favela Tour."
+                data-msg-es="Hola, tengo interés en el tour Favela Tour."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+no+passeio+Favela+Tour."
+                target="_blank">
+                Quero saber mais
+            </a>
+        </div>
+
+        <!-- HELICOPTER TOUR -->
+        <div class="card">
+            <h3 data-pt="🚁 Helicopter Tour" data-en="🚁 Helicopter Tour" data-es="🚁 Helicopter Tour">
+                🚁 Helicopter Tour
+            </h3>
+
+            <h4 data-pt="Descrição" data-en="Description" data-es="Descripción">Descrição</h4>
+            <p data-pt="Sobrevoo pelas praias, Cristo e Pão de Açúcar em um passeio inesquecível."
+                data-en="Fly over beaches, Christ the Redeemer and Sugarloaf in an unforgettable experience."
+                data-es="Sobrevuelo por las playas, el Cristo y el Pan de Azúcar en una experiencia inolvidable.">
+                Sobrevoo pelas praias, Cristo e Pão de Açúcar em um passeio inesquecível.
+            </p>
+
+            <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+            <p data-pt="Transporte até o heliponto, equipe de apoio e voo de 30 minutos."
+                data-en="Transportation to the helipad, support staff and a 30-minute flight."
+                data-es="Transporte al helipuerto, equipo de apoyo y vuelo de 30 minutos.">
+                Transporte até o heliponto, equipe de apoio e voo de 30 minutos.
+            </p>
+
+            <h4 data-pt="Frequência" data-en="Frequency" data-es="Frecuencia">Frequência</h4>
+            <p data-pt="Todos os dias" data-en="Every day" data-es="Todos los días">Todos os dias</p>
+
+            <a class="btn" data-pt="Quero saber mais" data-en="More info" data-es="Quiero saber más"
+                data-msg-pt="Olá, tenho interesse no passeio helicóptero."
+                data-msg-en="Hello, I'm interested in the Helicopter Tour."
+                data-msg-es="Hola, tengo interés en el paseo en helicóptero."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+no+Helicopter+Tour." target="_blank">
+                Quero saber mais
+            </a>
+        </div>
+
+        <!-- PETRÓPOLIS - ALMOÇO + BOHEMIA -->
+        <div class="card">
+            <h3 data-pt="🏰 Petrópolis - Almoço + Bohemia" data-en="🏰 Petrópolis - Lunch + Bohemia"
+                data-es="🏰 Petrópolis - Almuerzo + Bohemia">
+                🏰 Petrópolis - Almoço + Bohemia
+            </h3>
+
+            <h4 data-pt="Descritivo" data-en="Description" data-es="Descripción">Descritivo</h4>
+            <p data-pt="Tour histórico completo com almoço e visita à cervejaria Bohemia."
+                data-en="Complete historical tour including lunch and Bohemia brewery visit."
+                data-es="Tour histórico completo con almuerzo y visita a la cervecería Bohemia.">
+                Tour histórico completo com almoço e visita à cervejaria Bohemia.
+            </p>
+
+            <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+            <p data-pt="Transporte, guia, ingressos, almoço buffet livre e tour Bohemia."
+                data-en="Transportation, guide, tickets, buffet lunch and Bohemia tour."
+                data-es="Transporte, guía, entradas, almuerzo buffet libre y tour Bohemia.">
+                Transporte, guia, ingressos, almoço buffet livre e tour Bohemia.
+            </p>
+
+            <h4 data-pt="Frequência" data-en="Frequency" data-es="Frecuencia">Frequência</h4>
+            <p data-pt="De terça a domingo" data-en="Tuesday to Sunday" data-es="De martes a domingo">
+                De terça a domingo
+            </p>
+
+            <h4 data-pt="Horário" data-en="Schedule" data-es="Horario">Horário</h4>
+            <p data-pt="A partir de 07h" data-en="From 7 AM" data-es="Desde las 7 AM">A partir de 07h</p>
+
+            <h4 data-pt="Duração" data-en="Duration" data-es="Duración">Duração</h4>
+            <p data-pt="12 horas" data-en="12 hours" data-es="12 horas">12 horas</p>
+
+            <a class="btn" data-pt="Quero saber mais" data-en="More info" data-es="Quiero saber más"
+                data-msg-pt="Olá, tenho interesse no passeio Petrópolis – Almoço + Bohemia."
+                data-msg-en="Hello, I'm interested in the Petrópolis – Lunch + Bohemia tour."
+                data-msg_es="Hola, tengo interés en el tour Petrópolis – Almuerzo + Bohemia."
+                data-msg-en="Hello, I'm interested in the Petrópolis – Lunch + Bohemia tour."
+                data-msg-es="Hola, tengo interés en el tour Petrópolis – Almuerzo + Bohemia."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+no+passeio+Petr%C3%B3polis+-+Almoço+%2B+Bohemia."
+                target="_blank">
+                Quero saber mais
+            </a>
+        </div>
+
+        <!-- PETRÓPOLIS - ALMOÇO + BOHEMIA + MUSEU DE CERA -->
+        <div class="card">
+            <h3 data-pt="🏰 Petrópolis - Almoço + Bohemia + Museu de Cera"
+                data-en="🏰 Petrópolis - Lunch + Bohemia + Wax Museum"
+                data-es="🏰 Petrópolis - Almuerzo + Bohemia + Museo de Cera">
+                🏰 Petrópolis - Almoço + Bohemia + Museu de Cera
+            </h3>
+
+            <h4 data-pt="Descritivo" data-en="Description" data-es="Descripción">Descritivo</h4>
+            <p data-pt="Passeio histórico completo pela cidade imperial, incluindo o Museu de Cera."
+                data-en="Complete historical tour through the imperial city, including the Wax Museum."
+                data-es="Tour histórico completo por la ciudad imperial, incluyendo el Museo de Cera.">
+                Passeio histórico completo pela cidade imperial, incluindo o Museu de Cera.
+            </p>
+
+            <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
+            <ul>
+                <li data-pt="Casa do Alemão" data-en="Casa do Alemão" data-es="Casa do Alemão">Casa do Alemão</li>
+                <li data-pt="Palácio Quitandinha" data-en="Quitandinha Palace" data-es="Palacio Quitandinha">
+                    Palácio Quitandinha
+                </li>
+                <li data-pt="Catedral São Pedro de Alcântara" data-en="St. Peter of Alcantara Cathedral"
+                    data-es="Catedral de San Pedro de Alcántara">
+                    Catedral São Pedro de Alcântara
+                </li>
+                <li data-pt="Casa de Chocolate Katz" data-en="Katz Chocolate House" data-es="Casa de Chocolate Katz">
+                    Casa de Chocolate Katz
+                </li>
+                <li data-pt="Palácio de Cristal" data-en="Crystal Palace" data-es="Palacio de Cristal">
+                    Palácio de Cristal
+                </li>
+                <li data-pt="Casa de Santos Dumont (externa)" data-en="Santos Dumont House (external)"
+                    data-es="Casa de Santos Dumont (externa)">
+                    Casa de Santos Dumont (externa)
+                </li>
+                <li data-pt="Museu Imperial" data-en="Imperial Museum" data-es="Museo Imperial">Museu Imperial</li>
+                <li data-pt="Tour Bohemia" data-en="Bohemia Tour" data-es="Tour Bohemia">Tour Bohemia</li>
+                <li data-pt="Museu de Cera" data-en="Wax Museum" data-es="Museo de Cera">Museu de Cera</li>
+            </ul>
+
+            <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+            <ul>
+                <li data-pt="Transporte" data-en="Transportation" data-es="Transporte">Transporte</li>
+                <li data-pt="Guia de turismo especializado" data-en="Specialized tour guide"
+                    data-es="Guía de turismo especializado">
+                    Guia de turismo especializado
+                </li>
+                <li data-pt="Ingressos (Museu Imperial, Bohemia, Museu de Cera)"
+                    data-en="Tickets (Imperial Museum, Bohemia, Wax Museum)"
+                    data-es="Entradas (Museo Imperial, Bohemia, Museo de Cera)">
+                    Ingressos (Museu Imperial, Bohemia, Museu de Cera)
+                </li>
+                <li data-pt="Almoço buffet livre" data-en="All-you-can-eat buffet lunch"
+                    data-es="Almuerzo buffet libre">
+                    Almoço buffet livre
+                </li>
+            </ul>
+
+            <a class="btn" data-pt="Quero saber mais" data-en="More info" data-es="Quiero saber más"
+                data-msg-pt="Olá, tenho interesse no passeio Petrópolis – Almoço + Bohemia + Museu de Cera."
+                data-msg-en="Hello, I'm interested in the Petrópolis – Lunch + Bohemia + Wax Museum tour."
+                data-msg-es="Hola, tengo interés en el tour Petrópolis – Almuerzo + Bohemia + Museo de Cera."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+no+passeio+Petr%C3%B3polis+-+Almoço+%2B+Bohemia+%2B+Museu+de+Cera."
+                target="_blank">
+                Quero saber mais
+            </a>
+        </div>
+
+        <!-- TRANSFERS -->
+        <div class="card">
+            <h3 data-pt="🚗 Transfers Disponíveis" data-en="🚗 Available Transfers" data-es="🚗 Transfers Disponibles">
+                🚗 Transfers Disponíveis
+            </h3>
+
+            <p data-pt="Oferecemos transfers privativos e confortáveis para diversos destinos próximos ao Rio."
+                data-en="We offer private and comfortable transfers to several destinations near Rio."
+                data-es="Ofrecemos transfers privados y cómodos a varios destinos cerca de Río.">
+                Oferecemos transfers privativos e confortáveis para diversos destinos próximos ao Rio.
+            </p>
+
+            <h4 data-pt="Destinos" data-en="Destinations" data-es="Destinos">Destinos</h4>
+            <ul>
+                <li data-pt="Petrópolis" data-en="Petrópolis" data-es="Petrópolis">Petrópolis</li>
+                <li data-pt="Paraty" data-en="Paraty" data-es="Paraty">Paraty</li>
+                <li data-pt="Angra dos Reis" data-en="Angra dos Reis" data-es="Angra dos Reis">Angra dos Reis</li>
+                <li data-pt="Ilha Grande" data-en="Ilha Grande" data-es="Ilha Grande">Ilha Grande</li>
+                <li data-pt="Arraial do Cabo" data-en="Arraial do Cabo" data-es="Arraial do Cabo">Arraial do Cabo</li>
+                <li data-pt="Búzios" data-en="Búzios" data-es="Búzios">Búzios</li>
+            </ul>
+
+            <a class="btn" data-pt="Solicitar Transfer" data-en="Request Transfer" data-es="Solicitar Traslado"
+                data-msg-pt="Olá, tenho interesse em um transfer." data-msg-en="Hello, I’m interested in a transfer."
+                data-msg-es="Hola, tengo interés en un traslado."
+                href="https://wa.me/5521967247793?text=Ol%C3%A1,+tenho+interesse+em+transfer." target="_blank">
+                Solicitar Transfer
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="container">
+        <h2 data-pt="WhatsApp da Recepção" data-en="Reception WhatsApp" data-es="WhatsApp de la Recepción">
+            WhatsApp da Recepção
+        </h2>
+
+        <p data-pt="Fale com o concierge para tirar dúvidas." data-en="Speak with the concierge for assistance."
+            data-es="Hable con el conserje para asistencia.">
+            Fale com o concierge para tirar dúvidas.
+        </p>
+
+        <p><strong data-pt="Telefone/WhatsApp:" data-en="WhatsApp:" data-es="WhatsApp:">WhatsApp:</strong> +55 21
+            96724-7793</p>
+        <p><strong data-pt="Email:" data-en="Email:" data-es="Correo:">Email:</strong> hotel@ipanemainn.com.br</p>
+
+        <a class="btn" data-pt="Falar com o concierge" data-en="Talk to concierge" data-es="Hablar con el conserje"
+            data-msg-pt="Olá, gostaria de ajuda com informações do hotel e passeios."
+            data-msg-en="Hello, I would like help with hotel information and tours."
+            data-msg-es="Hola, me gustaría ayuda con información del hotel y paseos."
+            href="https://wa.me/5521967247793?text=Ol%C3%A1,+gostaria+de+ajuda+com+informa%C3%A7%C3%B5es+do+hotel+e+passeios."
+            target="_blank">
+            Falar com o concierge
+        </a>
+    </section>
+
+    <footer>
+        <p data-pt="© 2025 Concierge Ipanema Inn" data-en="© 2025 Ipanema Inn Concierge"
+            data-es="© 2025 Conserjería Ipanema Inn">
+            © 2025 Concierge Ipanema Inn
+        </p>
+        <br>
+        <p>Rua Maria Quitéria, 27 - Rio de Janeiro - RJ
+            22410-040, Brasil</p>
+    </footer>
+
+    <!-- SCRIPT DE IDIOMA -->
+    <script>
+        function setLang(lang) {
+            // 1) Altera textos que usam data-pt / data-en / data-es
+            document.querySelectorAll("[data-" + lang + "]").forEach(el => {
+                // Para <title> e outros elementos de texto, innerHTML funciona bem
+                el.innerHTML = el.getAttribute("data-" + lang);
+            });
+
+            // 2) Atualiza os links de WhatsApp com as mensagens apropriadas
+            // Procuramos atributos: data-msg-pt / data-msg-en / data-msg-es
+            document.querySelectorAll("[data-msg-" + lang + "]").forEach(el => {
+                const msg = el.getAttribute("data-msg-" + lang) || "";
+                const base = "https://wa.me/5521967247793?text=";
+                el.href = base + encodeURIComponent(msg);
+            });
+        }
+
+        // Inicializa em Português
+        setLang("pt");
+    </script>
+</body>
+
+</html>
