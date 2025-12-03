@@ -7,22 +7,43 @@
     <title data-pt="Concierge - Hotel RJ" data-en="Concierge - Hotel RJ" data-es="Conserjería - Hotel RJ">
         Concierge - Hotel RJ
     </title>
-
     <link rel="stylesheet" href="style.css" />
-
     <style>
+        img {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Source Sans Pro, sans-serif;
             background: #E6F3FF;
             color: #2c3e50;
         }
 
         header {
-            background: #2f4f6f;
+            background: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=800&fit=crop') no-repeat center center;
+            background-size: cover;
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        header * {
+            position: relative;
+            z-index: 1;
         }
 
         nav {
@@ -136,6 +157,10 @@
             <h3 data-pt="⛰️ Um dia no Rio" data-en="⛰️ One Day in Rio" data-es="⛰️ Un Día en Río">
                 🎯 Um dia no Rio
             </h3>
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop"
+                alt="Cristo Redentor">
+            <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=600&h=400&fit=crop"
+                alt="Pão de Açúcar">
 
             <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
             <ul>
@@ -215,7 +240,8 @@
             <h3 data-pt="🎯 Rio Express" data-en="🎯 Rio Express" data-es="🎯 Río Express">
                 🎯 Rio Express
             </h3>
-
+            <img src="https://freerangestock.com/sample/164452/iconic-sugarloaf-mountain-and-boats-in-rio-de-janeiro.jpg"
+                alt="pao de acucar">
             <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
             <ul>
                 <li data-pt="Cristo Redentor" data-en="Christ the Redeemer" data-es="Cristo Redentor">
@@ -264,7 +290,8 @@
             <h3 data-pt="🌳 Floresta da Tijuca" data-en="🌳 Tijuca Forest" data-es="🌳 Bosque da Tijuca">
                 🌳 Floresta da Tijuca
             </h3>
-
+            <img src="https://ogimg.infoglobo.com.br/in/20931167-200-b07/FT1086A/760/floresta-da-tijuca_capa.jpg"
+                alt="floresta da tijuca">
             <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
             <p data-pt="Vista Chinesa, Mesa do Imperador, Cachoeira Cascatinha Taunay, Capela Mayrink, Centro de Visitantes, Açude da Solidão, Cachoeiras e Trilhas."
                 data-en="Chinese View, Emperor's Table, Taunay Waterfall, Mayrink Chapel, Visitor Center, Solitude Reservoir, Waterfalls and Trails."
@@ -306,6 +333,8 @@
             <h3 data-pt="🏔️ Pedra do Telégrafo" data-en="🏔️ Telégrafo Rock" data-es="🏔️ Piedra del Telégrafo">
                 🏔️ Pedra do Telégrafo
             </h3>
+            <img src="https://apureguria.com/wp-content/uploads/2019/04/praia-do-telegrafo-rio-de-janeiro.jpg.webp"
+                alt="pedra do telegrafo">
 
             <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
             <p data-pt="Passando por bairros como Barra da Tijuca e Recreio, com trilha de 50 minutos até o topo."
@@ -342,7 +371,7 @@
                 data-es="🛥️ Paseo en Lancha en Río">
                 Passeio de Lancha no Rio
             </h3>
-
+            <img src="https://naveguetemporada.com/wp-content/uploads/2023/01/1a.jpg" alt="passeio de lancha">
             <p data-pt="Um passeio incrível pelas águas do Rio de Janeiro, com paradas para fotos, mergulhos e vistas deslumbrantes."
                 data-en="An amazing boat ride through the waters of Rio de Janeiro, with stops for photos, swimming, and stunning views."
                 data-es="Un increíble paseo en lancha por las aguas de Río de Janeiro, con paradas para fotos, baños y vistas impresionantes.">
@@ -364,7 +393,8 @@
                 data-es="🤿 Buceo en Arraial do Cabo">
                 Mergulho em Arraial do Cabo
             </h3>
-
+            <img src="https://ikigaiexperience.com.br/wp-content/uploads/2021/12/Mergulho-Arraial-do-Cabo-13.jpg"
+                alt="mergulho arraial">
             <p data-pt="Explore a vida marinha de Arraial do Cabo em um mergulho guiado nas águas mais claras do Brasil."
                 data-en="Explore the marine life of Arraial do Cabo in a guided dive through the clearest waters in Brazil."
                 data-es="Explore la vida marina de Arraial do Cabo en una inmersión guiada por las aguas más claras de Brasil.">
@@ -386,7 +416,8 @@
             <h3 data-pt="🏙️ Favela Tour" data-en="🏙️ Favela Tour" data-es="🏙️ Favela Tour">
                 🏙️ Favela Tour
             </h3>
-
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rocinha_rio_de_janeiro_panorama_2010.jpg/1200px-Rocinha_rio_de_janeiro_panorama_2010.jpg"
+                alt="favela tour">
             <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
             <p data-pt="Rocinha com visita a ruas, becos e contato com a vida local."
                 data-en="Rocinha, with visits to streets, alleys, and daily local life."
@@ -395,6 +426,7 @@
             </p>
 
             <h4 data-pt="Inclui" data-en="Includes" data-es="Incluye">Inclui</h4>
+
             <p data-pt="Transporte e guia especializado." data-en="Transportation and specialized guide."
                 data-es="Transporte y guía especializado.">
                 Transporte e guia especializado.
@@ -418,10 +450,11 @@
 
         <!-- HELICOPTER TOUR -->
         <div class="card">
-            <h3 data-pt="🚁 Helicopter Tour" data-en="🚁 Helicopter Tour" data-es="🚁 Helicopter Tour">
+            <h3 data-pt="🚁 Passeio de helicóptero" data-en="🚁 Helicopter Tour" data-es="🚁 paseo en helicóptero">
                 🚁 Helicopter Tour
             </h3>
-
+            <img src="https://helicopterthrills.com/wp-content/uploads/2024/09/Rio-de-Janeiro-helicopter-tours.webp"
+                alt="helicopter tour">
             <h4 data-pt="Descrição" data-en="Description" data-es="Descripción">Descrição</h4>
             <p data-pt="Sobrevoo pelas praias, Cristo e Pão de Açúcar em um passeio inesquecível."
                 data-en="Fly over beaches, Christ the Redeemer and Sugarloaf in an unforgettable experience."
@@ -454,7 +487,10 @@
                 data-es="🏰 Petrópolis - Almuerzo + Bohemia">
                 🏰 Petrópolis - Almoço + Bohemia
             </h3>
-
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/54/63/9d/palacio-quitandinha.jpg?w=1200&h=-1&s=1"
+                alt="Petrópolis palacio">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/09/af/de.jpg"
+                alt="fabrica Bohemia">
             <h4 data-pt="Descritivo" data-en="Description" data-es="Descripción">Descritivo</h4>
             <p data-pt="Tour histórico completo com almoço e visita à cervejaria Bohemia."
                 data-en="Complete historical tour including lunch and Bohemia brewery visit."
@@ -499,7 +535,10 @@
                 data-es="🏰 Petrópolis - Almuerzo + Bohemia + Museo de Cera">
                 🏰 Petrópolis - Almoço + Bohemia + Museu de Cera
             </h3>
-
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/86/81/63/fachada-do-museu-de-cera.jpg?w=1200&h=-1&s=1"
+                alt="museu de cera">
+            <img src="https://serracarioca.rio.br/wp-content/uploads/2020/11/museu-de-cera-ayrton-senna.jpg"
+                alt="airton senna museu de cera">
             <h4 data-pt="Descritivo" data-en="Description" data-es="Descripción">Descritivo</h4>
             <p data-pt="Passeio histórico completo pela cidade imperial, incluindo o Museu de Cera."
                 data-en="Complete historical tour through the imperial city, including the Wax Museum."
@@ -578,7 +617,8 @@
                 <li data-pt="Paraty" data-en="Paraty" data-es="Paraty">Paraty</li>
                 <li data-pt="Angra dos Reis" data-en="Angra dos Reis" data-es="Angra dos Reis">Angra dos Reis</li>
                 <li data-pt="Ilha Grande" data-en="Ilha Grande" data-es="Ilha Grande">Ilha Grande</li>
-                <li data-pt="Arraial do Cabo" data-en="Arraial do Cabo" data-es="Arraial do Cabo">Arraial do Cabo</li>
+                <li data-pt="Arraial do Cabo" data-en="Arraial do Cabo" data-es="Arraial do Cabo">Arraial do Cabo
+                </li>
                 <li data-pt="Búzios" data-en="Búzios" data-es="Búzios">Búzios</li>
             </ul>
 
