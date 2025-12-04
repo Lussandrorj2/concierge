@@ -9,6 +9,22 @@
     </title>
     <link rel="stylesheet" href="style.css" />
     <style>
+        /* Padrão uniforme para todas as imagens dos cards */
+.passeio img {
+    width: 100%;
+    height: 250px;      /* define altura padrão */
+    object-fit: cover;  /* corta suave sem distorcer */
+    border-radius: 10px;
+    display: block;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 480px) {
+    .passeio img {
+        height: 200px;
+    }
+}
+
         img {
             width: 100%;
             height: auto;
@@ -142,82 +158,48 @@
 
         /* Media queries for mobile optimization */
         @media (max-width: 768px) {
-            header {
-                padding: 60px 15px;
-                /* Reduce padding on mobile */
-            }
+    header { padding: 80px 15px; }
+    h1 { font-size: 1.8em; }
+    .container { padding: 25px; }
 
-            h1 {
-                font-size: 1.8em;
-                /* Smaller header on mobile */
-            }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+    }
 
-            p {
-                font-size: 14px;
-                /* Ensure readability */
-            }
+    .assistencia-btn {
+        margin-left: 0;
+        margin-top: 12px;
+    }
 
-            .container {
-                padding: 15px;
-                /* Reduce padding */
-            }
+    .botao-wpp {
+        padding: 14px 20px;
+        font-size: 13px;
+    }
+}
 
-            nav a {
-                margin: 0 10px;
-                padding: 8px;
-            }
+@media (max-width: 480px) {
+    h2 { font-size: 1.5em; }
 
-            .lang-btns button {
-                padding: 8px 12px;
-                font-size: 12px;
-            }
+    .lang-btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-            .card {
-                padding: 15px;
-            }
-
-            .btn {
-                padding: 10px 15px;
-                font-size: 14px;
-            }
-
-            .botao-wpp {
-                padding: 12px 18px;
-                font-size: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h2 {
-                font-size: 1.3em;
-            }
-
-            nav {
-                padding: 8px;
-            }
-
-            nav a {
-                display: block;
-                /* Stack nav links vertically on very small screens */
-                margin: 5px 0;
-            }
-
-            .lang-btns {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .lang-btns button {
-                flex: 1 1 30%;
-                margin: 5px;
-            }
-        }
+    .lang-btns button {
+        flex: 1 1 30%;
+        margin: 5px;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
     </style>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1 data-pt="Concierge Ipanema Inn" data-en="Ipanema Inn Concierge" data-es="Conserjería Ipanema Inn">
             Concierge Ipanema Inn
         </h1>
@@ -227,20 +209,18 @@
             data-es="Explore lo mejor de Río de Janeiro con nuestro conserje">
             Explore o melhor do Rio de Janeiro com o nosso concierge
         </p>
-
-        <div class="lang-btns">
-            <button onclick="setLang('pt')">🇧🇷 Português</button>
-            <button onclick="setLang('en')">🇺🇸 English</button>
-            <button onclick="setLang('es')">🇪🇸 Español</button>
-        </div>
     </header>
 
     <nav>
-        <a href="#assistencia-hospede" data-pt="Assistência ao Hóspede" data-en="Guest Assistance"
-            data-es="Asistencia al Huésped">
+    <div class="lang-btns">
+        <button onclick="setLang('pt')">🇧🇷 Português</button>
+        <button onclick="setLang('en')">🇺🇸 English</button>
+        <button onclick="setLang('es')">🇪🇸 Español</button>
+        <button onclick="document.getElementById('assistencia-hospede').scrollIntoView();" data-pt="Assistência ao Hóspede" data-en="Guest Assistance" data-es="Asistencia al Huésped">
             Assistência ao Hóspede
-        </a>
-    </nav>
+        </button>
+    </div>
+</nav>
 
 
     <section id="passeios" class="container">
@@ -255,6 +235,9 @@
             </h3>
             <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=600&h=400&fit=crop"
                 alt="Pão de Açúcar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Escadaria_Selar%C3%B3n_-_Rio_de_Janeiro_-_20240417062601.jpg" alt="escadaria seleron">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Maracan%C3%A3_Stadium_in_Rio_de_Janeiro.jpg/960px-Maracan%C3%A3_Stadium_in_Rio_de_Janeiro.jpg" alt="maracanã">
+
 
             <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
             <ul>
@@ -336,6 +319,7 @@
             </h3>
             <img src="https://freerangestock.com/sample/164452/iconic-sugarloaf-mountain-and-boats-in-rio-de-janeiro.jpg"
                 alt="pao de acucar">
+            <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2024/06/cristo-redentor-capa.jpg" alt="cristo rendentor*">
             <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
             <ul>
                 <li data-pt="Cristo Redentor" data-en="Christ the Redeemer" data-es="Cristo Redentor">
@@ -467,6 +451,8 @@
                 Passeio de Lancha no Rio
             </h3>
             <img src="https://naveguetemporada.com/wp-content/uploads/2023/01/1a.jpg" alt="passeio de lancha">
+            <img src="https://www.estadiacariocaconcierge.com.br/wp-content/uploads/2021/04/P_20210419_114631_vHDR_Auto-1-scaled.jpg" alt="passeio de lancha2">
+            
             <p data-pt="Um passeio incrível pelas águas do Rio de Janeiro, com paradas para fotos, mergulhos e vistas deslumbrantes."
                 data-en="An amazing boat ride through the waters of Rio de Janeiro, with stops for photos, swimming, and stunning views."
                 data-es="Un increíble paseo en lancha por las aguas de Río de Janeiro, con paradas para fotos, baños y vistas impresionantes.">
@@ -490,6 +476,8 @@
             </h3>
             <img src="https://ikigaiexperience.com.br/wp-content/uploads/2021/12/Mergulho-Arraial-do-Cabo-13.jpg"
                 alt="mergulho arraial">
+            <img src="https://emalgumlugardomundo.com.br/wp-content/uploads/2019/05/mergulho-em-arraial-do-cabo-21.jpg" alt="mergulho arraial2">
+
             <p data-pt="Explore a vida marinha de Arraial do Cabo em um mergulho guiado nas águas mais claras do Brasil."
                 data-en="Explore the marine life of Arraial do Cabo in a guided dive through the clearest waters in Brazil."
                 data-es="Explore la vida marina de Arraial do Cabo en una inmersión guiada por las aguas más claras de Brasil.">
@@ -511,8 +499,10 @@
             <h3 data-pt="🏙️ Favela Tour" data-en="🏙️ Favela Tour" data-es="🏙️ Favela Tour">
                 🏙️ Favela Tour
             </h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rocinha_rio_de_janeiro_panorama_2010.jpg/1200px-Rocinha_rio_de_janeiro_panorama_2010.jpg"
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rocinha_rio_de_janeiro_panorama_2010.jpg/1200px-Rocinha_rio_de_janeiro_panorama_2010.jpg"
                 alt="favela tour">
+            <img src="https://veja.abril.com.br/wp-content/uploads/2016/06/favela-rocinha-rio-de-janeiro-20110612-original.jpeg?crop=1&resize=1212%2C909" alt="rocinha"> 
+            
             <h4 data-pt="Roteiro" data-en="Itinerary" data-es="Itinerario">Roteiro</h4>
             <p data-pt="Rocinha com visita a ruas, becos e contato com a vida local."
                 data-en="Rocinha, with visits to streets, alleys, and daily local life."
@@ -550,6 +540,8 @@
             </h3>
             <img src="https://helicopterthrills.com/wp-content/uploads/2024/09/Rio-de-Janeiro-helicopter-tours.webp"
                 alt="helicopter tour">
+            <img src="https://comandantenobre.com.br/wp-content/uploads/2024/05/passeio-helicoptero-cristo-redentor.jpg" alt="helicopter tour 2">
+
             <h4 data-pt="Descrição" data-en="Description" data-es="Descripción">Descrição</h4>
             <p data-pt="Sobrevoo pelas praias, Cristo e Pão de Açúcar em um passeio inesquecível."
                 data-en="Fly over beaches, Christ the Redeemer and Sugarloaf in an unforgettable experience."
@@ -754,13 +746,16 @@
     </section>
 
     <footer>
+        <button class="botao-footer-topo"
+            onclick="document.getElementById('header').scrollIntoView({behavior: 'smooth'});" title="Voltar ao topo">
+            ⬆️ Voltar ao Topo
+        </button>
         <p data-pt="© 2025 Concierge Ipanema Inn" data-en="© 2025 Ipanema Inn Concierge"
             data-es="© 2025 Conserjería Ipanema Inn">
             © 2025 Concierge Ipanema Inn
         </p>
         <br>
-        <p>Rua Maria Quitéria, 27 - Rio de Janeiro - RJ
-            22410-040, Brasil</p>
+        <p>Rua Maria Quitéria, 27 - Rio de Janeiro - RJ 22410-040, Brasil</p>
     </footer>
 
     <!-- SCRIPT DE IDIOMA -->
