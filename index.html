@@ -2,20 +2,15 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Concierge Ipanema Inn | Passeios no Rio de Janeiro</title>
-
     <meta name="description"
         content="Passeios e experiências no Rio de Janeiro com concierge do Ipanema Inn. Tours, transfers e atividades exclusivas para hóspedes.">
-
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/235/235861.png">
 
     <style>
         /* RESET */
-
         * {
             margin: 0;
             padding: 0;
@@ -27,7 +22,6 @@
         }
 
         /* BODY */
-
         body {
             font-family: system-ui, Arial, Helvetica, sans-serif;
             background: #E6F3FF;
@@ -36,7 +30,6 @@
         }
 
         /* HEADER */
-
         header {
             background: url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=60") center/cover no-repeat;
             padding: 120px 20px;
@@ -70,8 +63,7 @@
             font-size: 20px;
         }
 
-        /* TRUST */
-
+        /* TRUST BAR */
         .trust {
             background: white;
             text-align: center;
@@ -81,19 +73,13 @@
         }
 
         /* CONTAINER */
-
         .container {
             max-width: 1200px;
             margin: auto;
             padding: 40px 20px;
         }
 
-        h2 {
-            margin-bottom: 10px;
-        }
-
         /* GRID */
-
         #passeios {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -102,13 +88,14 @@
         }
 
         /* CARD */
-
         .card {
             background: white;
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             transition: 0.25s;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -120,43 +107,28 @@
             margin-bottom: 10px;
         }
 
-        .card p {
-            margin-top: 10px;
-        }
-
-        /* INFO */
-
+        /* INFO & PRICE */
         .info {
             font-size: 14px;
             color: #666;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
-
-        /* RATING */
-
-        .rating {
-            font-size: 14px;
-            color: #f39c12;
-            margin-bottom: 10px;
-        }
-
-        /* PRICE */
 
         .price {
             font-size: 18px;
             font-weight: bold;
             color: #1E7F53;
-            margin-bottom: 10px;
+            margin: 10px 0;
         }
 
         /* GALLERY */
-
         .gallery {
             display: flex;
             gap: 10px;
             overflow-x: auto;
             scrollbar-width: none;
             margin-bottom: 15px;
+            padding-bottom: 5px;
         }
 
         .gallery::-webkit-scrollbar {
@@ -166,23 +138,23 @@
         .gallery img {
             min-width: 200px;
             max-width: 200px;
-            height: 160px;
+            height: 150px;
             object-fit: cover;
             border-radius: 8px;
             flex-shrink: 0;
         }
 
         /* BUTTON */
-
         .btn {
-            display: inline-block;
+            display: block;
             background: #25D366;
             color: white;
-            padding: 14px 20px;
+            padding: 14px;
             border-radius: 8px;
             font-weight: 600;
             text-decoration: none;
-            margin-top: 10px;
+            text-align: center;
+            margin-top: auto;
             transition: 0.2s;
         }
 
@@ -191,7 +163,6 @@
         }
 
         /* WHATSAPP FLOAT */
-
         .botao-wpp {
             position: fixed;
             bottom: 20px;
@@ -207,24 +178,15 @@
         }
 
         /* FOOTER */
-
         footer {
             background: #003366;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 40px 20px;
             margin-top: 60px;
-            font-size: 14px;
         }
 
-        /* MOBILE */
-
         @media (max-width:600px) {
-
-            header {
-                padding: 90px 20px;
-            }
-
             header h1 {
                 font-size: 30px;
             }
@@ -232,507 +194,206 @@
             header p {
                 font-size: 16px;
             }
-
         }
     </style>
-
 </head>
 
 <body>
 
     <header>
-
-        <h1>🛎️ Concierge </h1>
-
+        <h1>🛎️ Concierge</h1>
         <p>Passeios, experiências e transfers exclusivos no Rio de Janeiro</p>
-
     </header>
 
     <div class="trust">
-
-        ✔ Guias credenciados
-        ✔ Transporte seguro e confortável
-        ✔ Atendimento direto do concierge
-        ✔ Reserva rápida pelo WhatsApp
-
+        ✔ Guias credenciados | ✔ Transporte seguro | ✔ Reserva rápida pelo WhatsApp
     </div>
 
     <section class="container">
-
-        <h2>Passeios disponíveis</h2>
+        <h2>Passeios Disponíveis</h2>
 
         <div id="passeios">
 
-            <!-- UM DIA NO RIO -->
-
             <div class="card">
-
                 <h3>⛰️ Um dia no Rio</h3>
-
                 <div class="info">⏱️ Dia inteiro | 📅 Diário</div>
-
-                <div class="price">
-                    💰 A partir de R$ 725,00 por pessoa.
-                </div>
-
+                <div class="price">💰 A partir de R$ 725,00 por pessoa</div>
                 <div class="gallery">
-
-                    <img loading="lazy" src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=900"
-                        alt="Cristo Redentor Rio de Janeiro">
-
-                    <img loading="lazy"
-                        src="https://blog.bondinho.com.br/wp-content/uploads/2025/09/img-header-pao-de-acucar-rio-bondinho.webp"
+                    <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=900" alt="Cristo">
+                    <img src="https://blog.bondinho.com.br/wp-content/uploads/2025/09/img-header-pao-de-acucar-rio-bondinho.webp"
                         alt="Pão de Açúcar">
-
-                    <img loading="lazy"
-                        src="https://www.rodrigoindiotours.com.br/post/escadaria-selar%C3%B3n-hist%C3%B3ria-curiosidades-e-dicas-do-que-fazer-no-rio-de-janeiro"
-                        alt="Escadaria Selaron Rio">
-
-                    <img loading="lazy"
-                        src="https://upload.wikimedia.org/wikipedia/commons/3/36/Maracan%C3%A3_Stadium_in_Rio_de_Janeiro.jpg"
-                        alt="Estádio Maracanã Rio de Janeiro">
-
+                    <img src="https://ogimg.infoglobo.com.br/in/21516360-394-019/FT1086A/escadaria-selaron.jpg"
+                        alt="Selaron">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Maracan%C3%A3_Stadium_in_Rio_de_Janeiro.jpg"
+                        alt="Maracanã">
                 </div>
-
                 <p>Cristo Redentor, Escadaria Selarón, Maracanã e Pão de Açúcar com almoço buffet.</p>
-
                 <a class="btn"
                     href="https://wa.me/5521967247793?text=Tenho%20interesse%20no%20passeio%20Um%20dia%20no%20Rio"
-                    target="_blank">
-
-                    📲 Reservar pelo WhatsApp
-
-                </a>
-
+                    target="_blank">📲 Reservar WhatsApp</a>
             </div>
 
-            <!-- RIO EXPRESS -->
-
             <div class="card">
-
                 <h3>🎯 Rio Express</h3>
-
-                <div class="info">⏱️ Meio dia</div>
-
-                <div class="price">
-                    💰 A partir de R$ 690,00 por pessoa.
-                </div>
-
+                <div class="info">⏱️ Meio dia | 📅 Diário</div>
+                <div class="price">💰 A partir de R$ 690,00 por pessoa</div>
                 <div class="gallery">
-
-                    <img loading="lazy"
-                        src="https://freerangestock.com/sample/164452/iconic-sugarloaf-mountain-and-boats-in-rio-de-janeiro.jpg"
-                        alt="Pão de Açúcar Rio">
-
-                    <img loading="lazy"
-                        src="https://www.melhoresdestinos.com.br/wp-content/uploads/2025/03/ingresso-bondinho-pao-acucar-capa.jpeg"
-                        alt="Cristo Redentor">
-
+                    <img src="https://freerangestock.com/sample/164452/iconic-sugarloaf-mountain-and-boats-in-rio-de-janeiro.jpg"
+                        alt="Pão de Açúcar">
+                    <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2025/03/ingresso-bondinho-pao-acucar-capa.jpeg"
+                        alt="Cristo">
                 </div>
-
                 <p>Visita rápida aos dois principais cartões postais: Cristo Redentor e Pão de Açúcar.</p>
-
                 <a class="btn" href="https://wa.me/5521967247793?text=Tenho%20interesse%20no%20passeio%20Rio%20Express"
-                    target="_blank">
-
-                    📲 Reservar pelo WhatsApp
-
-                </a>
-
+                    target="_blank">📲 Reservar WhatsApp</a>
             </div>
 
             <div class="card">
-
                 <h3>🌳 Floresta da Tijuca</h3>
-
                 <div class="info">⏱️ 4 horas | 📅 Diário</div>
-
-                <div class="price">
-                    💰 A partir de R$ 210,00 por pessoa.
-                </div>
-
+                <div class="price">💰 A partir de R$ 210,00 por pessoa</div>
                 <div class="gallery">
-
-                    <img loading="lazy"
-                        src="https://ogimg.infoglobo.com.br/in/20931167-200-b07/FT1086A/760/floresta-da-tijuca_capa.jpg"
-                        alt="Floresta da Tijuca1">
-
-                    <img loading="lazy"
-                        src="https://parquenacionaldatijuca.rio/wp-content/uploads/2020/02/imagem141023-11_02_06.jpg"
-                        alt="Floresta da Tijuca2">
-
-                    <img loading="lazy"
-                        src="https://ogimg.infoglobo.com.br/brasil/23717986-86f-25b/FT1500A/690/83003851_RI-Rio-de-Janeiro-RJ-03-06-2019-Dia-Mundial-domeio-aAmbiente-Locais-quaseintocados.jpg"
-                        alt="Floresta da Tijuca3">
-
+                    <img src="https://ogimg.infoglobo.com.br/in/20931167-200-b07/FT1086A/760/floresta-da-tijuca_capa.jpg"
+                        alt="Floresta 1">
+                    <img src="https://parquenacionaldatijuca.rio/wp-content/uploads/2020/02/imagem141023-11_02_06.jpg"
+                        alt="Floresta 2">
+                    <img src="https://ogimg.infoglobo.com.br/brasil/23717986-86f-25b/FT1500A/690/83003851_RI-Rio-de-Janeiro-RJ-03-06-2019-Dia-Mundial-domeio-aAmbiente-Locais-quaseintocados.jpg"
+                        alt="Floresta 3">
                 </div>
-
-                <p>
-
-                    Passeio pela maior floresta urbana do mundo com cachoeiras e mirantes incríveis.
-
-                </p>
-
-                <a class="btn" href="https://wa.me/5521967247793?text=Tenho interesse no passeio Floresta da Tijuca"
-                    target="_blank">
-
-                    📲 Reservar pelo WhatsApp
-
-                </a>
-
+                <p>Passeio pela maior floresta urbana do mundo com cachoeiras e mirantes incríveis.</p>
+                <a class="btn"
+                    href="https://wa.me/5521967247793?text=Tenho%20interesse%20no%20passeio%20Floresta%20da%20Tijuca"
+                    target="_blank">📲 Reservar WhatsApp</a>
             </div>
 
             <div class="card">
-
                 <h3>🏔️ Pedra do Telégrafo</h3>
-
-                <div class="info">⏱️ 5 horas</div>
-
-                <div class="info">
-                    ⏱️ 3 a 4 horas | 📅 Diário
-                </div>
-
-                <div class="price">
-                    💰 A partir de R$ 190,00 por pessoa.
-                </div>
-
+                <div class="info">⏱️ 3 a 5 horas | 📅 Diário</div>
+                <div class="price">💰 A partir de R$ 190,00 por pessoa</div>
                 <div class="gallery">
-
-                    <img loading="lazy"
-                        src="https://freewalkertours.com/wp-content/uploads/2025/03/pedra-do-telegrafo-1-600x338-1.jpg"
-                        alt="Pedra do Telegrafo1">
-
-                    <img loading="lazy"
-                        src="https://www.trilhasecachoeiras.com.br/wp-content/uploads/2015/01/pedra-do-abismo.jpg"
-                        alt="Pedra do Telegrafo2">
-
-                    <img loading="lazy"
-                        src="https://tripbruta.wordpress.com/wp-content/uploads/2019/08/img-20190306-wa0026.jpg"
-                        alt="Pedra do Telegrafo3">
-
-                    <p>
-
-                        Trilha até um dos mirantes mais famosos do Rio com vista incrível da costa.
-
-                    </p>
-
-                    <a class="btn" href="https://wa.me/5521967247793?text=Tenho interesse no passeio Pedra do Telegrafo"
-                        target="_blank">
-
-                        📲 Reservar pelo WhatsApp
-
-                    </a>
-
+                    <img src="https://freewalkertours.com/wp-content/uploads/2025/03/pedra-do-telegrafo-1-600x338-1.jpg"
+                        alt="Telegrafo 1">
+                    <img src="https://www.trilhasecachoeiras.com.br/wp-content/uploads/2015/01/pedra-do-abismo.jpg"
+                        alt="Telegrafo 2">
                 </div>
-
-                <div class="card">
-
-                    <h3>🤿 Mergulho em Arraial do Cabo</h3>
-
-                    <div class="info">⏱️ Dia inteiro</div>
-
-                    <div class="price">
-                        💰 A partir de R$ 600,00 por pessoa.
-                    </div>
-
-                    <div class="gallery">
-
-                        <img loading="lazy"
-                            src="https://ikigaiexperience.com.br/wp-content/uploads/2021/12/Mergulho-Arraial-do-Cabo-13.jpg"
-                            alt="Mergulho-Arraial-do-Cabo-1">
-
-                        <img loading="lazy"
-                            src="https://emalgumlugardomundo.com.br/wp-content/uploads/2019/05/mergulho-em-arraial-do-cabo-21.jpg"
-                            alt="mergulho-em-arraial-do-cabo-2">
-
-                        <img loading="lazy"
-                            src="https://images3.motor-reserva.com.br/curl/motor_reserva/images/pagina_generica/cliente_783/202005211590084573mergulhocapa.jpg"
-                            alt="mergulho-em-arraial-do-cabo-3" </div>
-
-                        <p>
-
-                            Explore a vida marinha nas águas cristalinas de Arraial do Cabo.
-
-                        </p>
-
-                        <a class="btn"
-                            href="https://wa.me/5521967247793?text=Tenho interesse no mergulho em Arraial do Cabo"
-                            target="_blank">
-
-                            📲 Reservar pelo WhatsApp
-
-                        </a>
-
-                    </div>
-
-                    <div class="card">
-
-                        <h3>🏙️ Favela Tour</h3>
-
-                        <div class="info">
-                            ⏱️ 3 a 4 horas | 📅 Diário
-                        </div>
-
-                        <div class="price">
-                            💰 A partir de R$ 175,00 por pessoa
-                        </div>
-
-                        <div class="gallery">
-
-                            <img loading="lazy"
-                                src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Rocinha_rio_de_janeiro_panorama_2010.jpg"
-                                alt="Favela tour1">
-
-                            <img loading="lazy"
-                                src="https://veja.abril.com.br/wp-content/uploads/2016/06/favela-rocinha-rio-de-janeiro-20110612-original.jpeg"
-                                alt="Favela tour2">
-
-                            <img loading="lazy"
-                                src="https://f.i.uol.com.br/fotografia/2024/03/20/171095743765fb237db4855_1710957437_5x2_lg.jpg"
-                                alt="Favela tour3">
-
-                        </div>
-
-                        <p>
-
-                            Tour cultural pela Rocinha com guia local e vista panorâmica.
-
-                        </p>
-
-                        <a class="btn" href="https://wa.me/5521967247793?text=Tenho interesse no Favela Tour"
-                            target="_blank">
-
-                            📲 Reservar pelo WhatsApp
-
-                        </a>
-
-                    </div>
-
-                    <!-- PASSEIO LANCHA -->
-
-                    <div class="card">
-
-                        <h3>🛥️ Passeio de Lancha no Rio</h3>
-
-                        <div class="info">
-                            ⏱️ 3 a 4 horas | 📅 Diário
-                        </div>
-
-                        <div class="price">
-                            💰 A partir de R$ 1.600,00
-                        </div>
-
-                        <div class="gallery">
-
-                            <img loading="lazy"
-                                src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=900&q=60"
-                                alt="Lancha no Rio">
-
-                            <img loading="lazy"
-                                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=60"
-                                alt="Lancha no mar">
-
-                            <img loading="lazy"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1BzxaiI0ppD_TNOjHjM3MXCMDCI61Mj2kWA&s"
-                                alt="lancha praias">
-
-                        </div>
-
-                        <p>
-
-                            Passeio incrível pelas águas do Rio de Janeiro com paradas para fotos, mergulho e vistas
-                            deslumbrantes.
-
-                        </p>
-
-                        <a class="btn" href="https://wa.me/5521967247793?text=Olá tenho interesse no passeio de lancha"
-                            target="_blank">
-
-                            📲 Reservar pelo WhatsApp
-
-                        </a>
-
-                    </div>
-
-                    <!-- HELICOPTERO -->
-
-                    <div class="card">
-
-                        <h3>🚁 Passeio de Helicóptero</h3>
-
-                        <div class="info">
-                            ⏱️ 30 minutos
-                        </div>
-
-                        <div class="price">
-                            💰 A partir de R$ 1.800,00
-                        </div>
-
-                        <div class="gallery">
-
-                            <img loading="lazy"
-                                src="https://helicopterthrills.com/wp-content/uploads/2024/09/Rio-de-Janeiro-helicopter-tours.webp"
-                                alt="helicoptero rio">
-
-                            <img loading="lazy"
-                                src="https://comandantenobre.com.br/wp-content/uploads/2024/05/passeio-helicoptero-cristo-redentor.jpg"
-                                alt="helicoptero cristo">
-
-                            <img loading="lazy"
-                                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/00/4e/c1/caption.jpg?w=500&h=400&s=1"
-                                alt="helicoptero cristo2">
-
-                        </div>
-
-                        <p>
-
-                            Sobrevoo pelas praias, Cristo Redentor e Pão de Açúcar em uma experiência inesquecível.
-
-                        </p>
-
-                        <a class="btn"
-                            href="https://wa.me/5521967247793?text=Olá tenho interesse no passeio de helicóptero"
-                            target="_blank">
-
-                            📲 Reservar pelo WhatsApp
-
-                        </a>
-
-                    </div>
-
-                    <div class="card">
-
-                        <h3>🏰 Petrópolis – Almoço + Bohemia</h3>
-
-                        <div class="info">
-                            ⏱️ 12 horas | 📅 Terça a Domingo
-                        </div>
-
-                        <div class="price">
-                            💰 A partir de R$ 600,00 por pessoa.
-                        </div>
-
-                        <div class="gallery">
-
-                            <img loading="lazy"
-                                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/54/63/9d/palacio-quitandinha.jpg"
-                                alt="Palácio Quitandinha">
-
-                            <img loading="lazy"
-                                src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/09/af/de.jpg"
-                                alt="Cervejaria Bohemia">
-
-                            <img loading="lazy"
-                                src="https://blog.blablacar.com.br/wp-content/uploads/2024/05/petropolis-rj.webp"
-                                alt="petropolis-rj">
-
-                        </div>
-
-                        <p>
-
-                            Tour histórico pela cidade imperial com visita ao Palácio Quitandinha,
-                            centro histórico, almoço buffet e tour na cervejaria Bohemia.
-
-                        </p>
-
-                        <a class="btn"
-                            href="https://wa.me/5521967247793?text=Tenho interesse no passeio Petrópolis Almoço e Bohemia"
-                            target="_blank">
-
-                            📲 Reservar pelo WhatsApp
-
-                        </a>
-
-                    </div>
-
-                    <div class="card">
-
-                        <h3>🏰 Petrópolis – Almoço + Bohemia + Museu de Cera</h3>
-
-                        <div class="info">
-                            ⏱️ 12 horas | 📅 Terça a Domingo
-                        </div>
-
-                        <div class="price">
-                            💰 A partir de R$ 650,00
-                        </div>
-
-                        <div class="gallery">
-
-                            <img loading="lazy"
-                                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/86/81/63/fachada-do-museu-de-cera.jpg"
-                                alt="Museu de Cera Petrópolis">
-
-                            <img loading="lazy"
-                                src="https://serracarioca.rio.br/wp-content/uploads/2020/11/museu-de-cera-ayrton-senna.jpg"
-                                alt="Museu de Cera Senna">
-
-                            <img loading="lazy"
-                                src="https://viajeibonito.com.br/wp-content/uploads/2019/04/petropolis-catedral-de-sao-pedro-de-alcantara-1024x768.jpg"
-                                alt="petropolis-rj">
-
-
-                            <p>
-                                Passeio completo pela cidade imperial com visita ao Museu Imperial,
-                                Catedral São Pedro de Alcântara, Bohemia e Museu de Cera.
-
-                            </p>
-
-                            <a class="btn"
-                                href="https://wa.me/5521967247793?text=Tenho interesse no passeio Petrópolis Museu de Cera"
-                                target="_blank">
-
-                                📲 Reservar pelo WhatsApp
-
-                            </a>
-
-                        </div>
-
-                        <div class="card">
-
-                            <h3>🚗 Transfers Privativos</h3>
-
-                            <p>
-
-                                Transfers confortáveis para:
-
-                                • Petrópolis
-                                • Búzios
-                                • Angra dos Reis
-                                • Paraty
-                                • Arraial do Cabo
-
-                            </p>
-
-                            <a class="btn" href="https://wa.me/5521967247793?text=Tenho interesse em transfer"
-                                target="_blank">
-
-                                📲 Solicitar Transfer
-
-                            </a>
-
-                            <img loading="lazy"
-                                src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/9f/4c/1d.jpg"
-                                alt="transfer car">
-
-                        </div>
-
-                    </div>
-
+                <p>Trilha até um dos mirantes mais famosos para fotos criativas com vista da costa.</p>
+                <a class="btn" href="https://wa.me/5521967247793?text=Tenho%20interesse%20na%20Pedra%20do%20Telegrafo"
+                    target="_blank">📲 Reservar WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>🤿 Mergulho em Arraial do Cabo</h3>
+                <div class="info">⏱️ Dia inteiro | 📅 Sob consulta</div>
+                <div class="price">💰 A partir de R$ 600,00 por pessoa</div>
+                <div class="gallery">
+                    <img src="https://ikigaiexperience.com.br/wp-content/uploads/2021/12/Mergulho-Arraial-do-Cabo-13.jpg"
+                        alt="Mergulho 1">
+                    <img src="https://emalgumlugardomundo.com.br/wp-content/uploads/2019/05/mergulho-em-arraial-do-cabo-21.jpg"
+                        alt="Mergulho 2">
+                </div>
+                <p>Explore a vida marinha nas águas cristalinas do "Caribe Brasileiro".</p>
+                <a class="btn" href="https://wa.me/5521967247793?text=Tenho%20interesse%20no%20Mergulho%20em%20Arraial"
+                    target="_blank">📲 Reservar WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>🏙️ Favela Tour</h3>
+                <div class="info">⏱️ 3 a 4 horas | 📅 Diário</div>
+                <div class="price">💰 A partir de R$ 175,00 por pessoa</div>
+                <div class="gallery">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Rocinha_rio_de_janeiro_panorama_2010.jpg"
+                        alt="Rocinha">
+                    <img src="https://veja.abril.com.br/wp-content/uploads/2016/06/favela-rocinha-rio-de-janeiro-20110612-original.jpeg"
+                        alt="Favela">
+                </div>
+                <p>Tour cultural pela Rocinha com guia local e vista panorâmica da cidade.</p>
+                <a class="btn" href="https://wa.me/5521967247793?text=Tenho%20interesse%20no%20Favela%20Tour"
+                    target="_blank">📲 Reservar WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>🛥️ Passeio de Lancha</h3>
+                <div class="info">⏱️ 3 a 4 horas | 📅 Privativo</div>
+                <div class="price">💰 A partir de R$ 1.600,00 (Barco)</div>
+                <div class="gallery">
+                    <img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=900"
+                        alt="Lancha 1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1BzxaiI0ppD_TNOjHjM3MXCMDCI61Mj2kWA&s"
+                        alt="Lancha 2">
+                </div>
+                <p>Navegue pela Baía de Guanabara e praias oceânicas com total exclusividade.</p>
+                <a class="btn" href="https://wa.me/5521967247793?text=Interesse%20em%20Passeio%20de%20Lancha"
+                    target="_blank">📲 Reservar WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>🚁 Passeio de Helicóptero</h3>
+                <div class="info">⏱️ 30 minutos | 📅 Diário</div>
+                <div class="price">💰 A partir de R$ 1.800,00</div>
+                <div class="gallery">
+                    <img src="https://helicopterthrills.com/wp-content/uploads/2024/09/Rio-de-Janeiro-helicopter-tours.webp"
+                        alt="Helo 1">
+                    <img src="https://comandantenobre.com.br/wp-content/uploads/2024/05/passeio-helicoptero-cristo-redentor.jpg"
+                        alt="Helo 2">
+                </div>
+                <p>Sobrevoo pelas praias, Cristo Redentor e Pão de Açúcar em uma vista inesquecível.</p>
+                <a class="btn" href="https://wa.me/5521967247793?text=Interesse%20em%20Helicóptero" target="_blank">📲
+                    Reservar WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>🏰 Petrópolis + Bohemia</h3>
+                <div class="info">⏱️ 12 horas | 📅 Ter a Dom</div>
+                <div class="price">💰 A partir de R$ 600,00 por pessoa</div>
+                <div class="gallery">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/54/63/9d/palacio-quitandinha.jpg"
+                        alt="Quitandinha">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/09/af/de.jpg"
+                        alt="Bohemia">
+                </div>
+                <p>Tour histórico: Palácio Quitandinha, Centro Imperial e Cervejaria Bohemia.</p>
+                <a class="btn" href="https://wa.me/5521967247793?text=Interesse%20em%20Petropolis%20Bohemia"
+                    target="_blank">📲 Reservar WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>🏰 Petrópolis + Museu de Cera</h3>
+                <div class="info">⏱️ 12 horas | 📅 Ter a Dom</div>
+                <div class="price">💰 A partir de R$ 650,00 por pessoa</div>
+                <div class="gallery">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/86/81/63/fachada-do-museu-de-cera.jpg"
+                        alt="Museu Cera">
+                    <img src="https://serracarioca.rio.br/wp-content/uploads/2020/11/museu-de-cera-ayrton-senna.jpg"
+                        alt="Senna Cera">
+                </div>
+                <p>Tour completo incluindo Museu Imperial, Catedral e o famoso Museu de Cera.</p>
+                <a class="btn" href="https://wa.me/5521967247793?text=Interesse%20em%20Petropolis%20Museu%20de%20Cera"
+                    target="_blank">📲 Reservar WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>🚗 Transfers Privativos</h3>
+                <div class="info">📍 Búzios, Angra, Paraty e Arraial</div>
+                <div class="price">💰 Sob consulta</div>
+                <div class="gallery">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/9f/4c/1d.jpg"
+                        alt="Transfer Car">
+                </div>
+                <p>Transporte privativo com motorista bilíngue para as principais cidades do estado.</p>
+                <a class="btn" href="https://wa.me/5521967247793?text=Quero%20cotar%20um%20Transfer" target="_blank">📲
+                    Solicitar Cotação</a>
+            </div>
+
+        </div>
     </section>
 
     <footer>
-
-        <p>© Concierge Hotel RJ</p>
-        <p>Rio de Janeiro - RJ</p>
-
+        <p>© Concierge Hotel RJ | Rio de Janeiro - RJ</p>
     </footer>
 
     <a class="botao-wpp" href="https://wa.me/5521967247793?text=Olá%20preciso%20de%20informações%20sobre%20passeios"
         target="_blank">
-
         💬 Concierge Online
-
     </a>
 
 </body>
