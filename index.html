@@ -9,7 +9,7 @@
 <title>Concierge Ipanema Inn</title>
 
 <meta name="description"
-content="Passeios no Rio de Janeiro com concierge do Ipanema Inn. Tours, transfers e experiências exclusivas para hóspedes.">
+content="Passeios e experiências no Rio de Janeiro com concierge do Ipanema Inn. Tours, transfers e atividades exclusivas para hóspedes.">
 
 <style>
 
@@ -21,10 +21,14 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 /* BODY */
 
 body{
-font-family:Arial, Helvetica, sans-serif;
+font-family:system-ui, Arial, Helvetica, sans-serif;
 background:#E6F3FF;
 color:#2c3e50;
 line-height:1.6;
@@ -56,13 +60,13 @@ z-index:1;
 }
 
 header h1{
-font-size:40px;
-text-shadow:0 5px 15px rgba(0,0,0,0.5);
+font-size:42px;
+text-shadow:0 5px 15px rgba(0,0,0,0.6);
 }
 
 header p{
-margin-top:10px;
-font-size:18px;
+margin-top:12px;
+font-size:20px;
 }
 
 /* TRUST */
@@ -83,6 +87,10 @@ margin:auto;
 padding:40px 20px;
 }
 
+h2{
+margin-bottom:10px;
+}
+
 /* GRID */
 
 #passeios{
@@ -99,7 +107,7 @@ background:white;
 padding:20px;
 border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.2s;
+transition:0.25s;
 }
 
 .card:hover{
@@ -116,7 +124,7 @@ margin-bottom:10px;
 .info{
 font-size:14px;
 color:#666;
-margin-bottom:8px;
+margin-bottom:10px;
 }
 
 /* RATING */
@@ -142,14 +150,21 @@ margin-bottom:10px;
 display:flex;
 gap:10px;
 overflow-x:auto;
+scrollbar-width:none;
 margin-bottom:15px;
+}
+
+.gallery::-webkit-scrollbar{
+display:none;
 }
 
 .gallery img{
 min-width:200px;
+max-width:200px;
 height:160px;
 object-fit:cover;
 border-radius:8px;
+flex-shrink:0;
 }
 
 /* BUTTON */
@@ -160,9 +175,14 @@ background:#25D366;
 color:white;
 padding:14px 20px;
 border-radius:8px;
-font-weight:bold;
+font-weight:600;
 text-decoration:none;
 margin-top:10px;
+transition:0.2s;
+}
+
+.btn:hover{
+background:#1ebe5c;
 }
 
 /* WHATSAPP FLOAT */
@@ -189,6 +209,25 @@ color:white;
 text-align:center;
 padding:25px;
 margin-top:60px;
+font-size:14px;
+}
+
+/* MOBILE */
+
+@media (max-width:600px){
+
+header{
+padding:90px 20px;
+}
+
+header h1{
+font-size:30px;
+}
+
+header p{
+font-size:16px;
+}
+
 }
 
 </style>
@@ -199,7 +238,7 @@ margin-top:60px;
 
 <header>
 
-<h1>🛎️ Concierge</h1>
+<h1>🛎️ Concierge </h1>
 
 <p>Experiências exclusivas no Rio de Janeiro</p>
 
@@ -609,12 +648,13 @@ target="_blank">
 
 </div>
 
+</div>
+
 </section>
 
 <footer>
 
-<p>© Concierge </p>
-
+<p>© Concierge Hotel RJ </p>
 <p>Rio de Janeiro - RJ</p>
 
 </footer>
