@@ -174,21 +174,30 @@
         }
 
         /* BUTTON */
+        /* BUTTON DOS PASSEIOS */
         .btn {
             display: block;
-            background: #25D366;
+            background: linear-gradient(135deg, #25D366, #1ebe5c);
             color: white;
-            padding: 14px;
-            border-radius: 8px;
-            font-weight: 600;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 700;
             text-decoration: none;
             text-align: center;
             margin-top: auto;
-            transition: 0.2s;
+            transition: all 0.25s ease;
+        
+            box-shadow: 0 8px 18px rgba(37, 211, 102, 0.35);
         }
-
+        
         .btn:hover {
-            background: #1ebe5c;
+            transform: translateY(-3px);
+            box-shadow: 0 14px 28px rgba(37, 211, 102, 0.45);
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.35);
         }
 
         /* WHATSAPP FLOAT */
@@ -359,7 +368,10 @@
                     <div class="price">${item.price}</div>
                     <div class="gallery">${imgsHtml}</div>
                     <p>${item.desc}</p>
-                    <a class="btn" href="${item.link}" target="_blank">${content[lang].btn}</a>
+                    <a class="btn" href="${item.link}" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="18" style="vertical-align:middle;margin-right:6px;">
+                    ${content[lang].btn}
+                    </a>
                 `;
                 grid.appendChild(card);
             });
